@@ -1,0 +1,66 @@
+import {
+  LayoutDashboard,
+  ClipboardList,
+  CalendarCheck,
+  Wallet,
+  MessageSquare,
+  Heart,
+  Star,
+  UserCircle,
+  Briefcase,
+  PlusCircle,
+  FolderKanban,
+  Users,
+  HardHat,
+  Layers,
+  Building2,
+  ScrollText,
+  FileSearch,
+  Scale,
+  Bell,
+  BarChart3,
+} from "lucide-react";
+import type { NavItem } from "@/components/dashboard/shell";
+
+export const CUSTOMER_NAV: NavItem[] = [
+  { href: "/dashboard/customer", label: "nav.overview", icon: LayoutDashboard },
+  { href: "/dashboard/customer/requests/new", label: "nav.newRequest", icon: PlusCircle },
+  { href: "/dashboard/customer/requests", label: "nav.myRequests", icon: ClipboardList },
+  { href: "/dashboard/customer/bookings", label: "nav.myBookings", icon: CalendarCheck },
+  { href: "/dashboard/customer/payments", label: "nav.payments", icon: Wallet },
+  { href: "/dashboard/customer/messages", label: "nav.messages", icon: MessageSquare },
+  { href: "/dashboard/customer/favorites", label: "nav.favorites", icon: Heart },
+  { href: "/dashboard/customer/reviews", label: "nav.myReviews", icon: Star },
+  { href: "/dashboard/customer/disputes", label: "nav.disputes", icon: Scale },
+  { href: "/dashboard/customer/notifications", label: "nav.notifications", icon: Bell },
+  { href: "/dashboard/customer/profile", label: "nav.profile", icon: UserCircle },
+];
+
+export const WORKER_NAV: NavItem[] = [
+  { href: "/dashboard/worker", label: "nav.overview", icon: LayoutDashboard },
+  { href: "/dashboard/worker/requests", label: "nav.jobRequests", icon: ClipboardList },
+  { href: "/dashboard/worker/jobs", label: "nav.myJobs", icon: Briefcase },
+  { href: "/dashboard/worker/calendar", label: "nav.calendar", icon: CalendarCheck },
+  { href: "/dashboard/worker/payments", label: "nav.paymentRecords", icon: Wallet },
+  { href: "/dashboard/worker/messages", label: "nav.messages", icon: MessageSquare },
+  { href: "/dashboard/worker/portfolio", label: "nav.portfolio", icon: FolderKanban },
+  { href: "/dashboard/worker/profile", label: "nav.profileAvailability", icon: UserCircle },
+  { href: "/dashboard/worker/reviews", label: "nav.reviews", icon: Star },
+  { href: "/dashboard/worker/disputes", label: "nav.disputes", icon: Scale },
+  { href: "/dashboard/worker/notifications", label: "nav.notifications", icon: Bell },
+];
+
+export const ADMIN_NAV: NavItem[] = [
+  { href: "/dashboard/admin", label: "nav.dashboard", icon: LayoutDashboard },
+  { href: "/dashboard/admin/payments", label: "nav.paymentVerification", icon: FileSearch },
+  { href: "/dashboard/admin/workers", label: "nav.workerVerification", icon: HardHat },
+  { href: "/dashboard/admin/bookings", label: "nav.bookings", icon: CalendarCheck },
+  { href: "/dashboard/admin/disputes", label: "nav.disputes", icon: Scale },
+  { href: "/dashboard/admin/notifications", label: "nav.notifications", icon: Bell },
+  { href: "/dashboard/admin/users", label: "nav.users", icon: Users },
+  { href: "/dashboard/admin/categories", label: "nav.services", icon: Layers },
+  { href: "/dashboard/admin/reports", label: "nav.reports", icon: BarChart3 },
+  { href: "/dashboard/admin/payment-accounts", label: "nav.cbeAccounts", icon: Building2 },
+  { href: "/dashboard/admin/audit", label: "nav.auditLog", icon: ScrollText },
+  { href: "/dashboard/admin/profile", label: "nav.profile", icon: UserCircle },
+];
